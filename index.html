@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calendario</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.8.1/js/all.js"
+      integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ"
+      crossorigin="anonymous"></script>
+    <script src="assets/js/jquery.js"></script>
+    <script defer src="assets/js/functions.js"></script>
+</head>
+<body>
+    <div class="container-absolute container-flex">
+        <div class="container-menu container-flex blue">
+            <div class="container-item-one container-flex">
+                
+            </div>
+            <div class="container-item-two container-flex">
+                <div class="item-one container-flex center-content is-active">
+                    <i class="fas fa-calendar-alt fa-2x"></i>
+                </div>
+                <div class="item-two container-flex center-content">
+                    <i class="fas fa-list fa-2x"></i>
+                </div>
+            </div>
+            <div id="addPerson" class="container-item-three container-flex">
+                <div class="item-three container-flex">
+                    <i class="fas fa-sign-in-alt fa-2x"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- MAIN USER -->
+        <div class="container-card container-flex" id="main-user">
+            <div class="container-card-one container-flex">
+                <h2 class="title">Actividades de limpieza</h2>
+            </div>
+            <div class="container-card-two container-flex">
+                <div class="container-date container-flex">
+                    <h2>Lunes</h2>
+                </div>
+                <div class="container-date container-flex">
+                    <h2>Martes</h2>
+                </div>
+                <div class="container-date container-flex">
+                    <h2>Miércoles</h2>
+                </div>
+                <div class="container-date container-flex">
+                    <h2>Jueves</h2>
+                </div>
+                <div class="container-date container-flex">
+                    <h2>Viernes</h2>
+                </div>
+            </div>
+            <div class="container-card-three container-flex">
+                <!-- LUNES ************************************************************ -->
+                <div class="container-task container-flex">
+                    <!-- TASK -->
+                    <div class="task light-blue">
+                        <div class="container-task-body container-flex">
+                            <div class="container-title container-flex">
+                                <h2>Cocina</h2>
+                            </div>
+                            <div class="container-status container-flex">
+                                <div class="status"></div>
+                            </div>
+                        </div>
+                        <div class="container-task-body container-name container-flex">
+                            <p>Juan</p>
+                        </div>
+                        <div class="container-task-body container-flex">
+                            <div class="container-botton-one container-flex">
+                                <button class="btn-change" id="btn-change"><i class="fas fa-exchange-alt fa-2x"></i></button>
+                            </div>
+                            <div class="container-botton-two container-flex">
+                                <input type="button" value="Finalizar" id="btn-end">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END TASK -->
+                    <!-- TASK -->
+                    <div class="task light-green mtop30">
+                            <div class="container-task-body container-flex">
+                                <div class="container-title container-flex">
+                                    <h2 id="task-monday-title">Refrigerador</h2>
+                                </div>
+                                <div class="container-status container-flex">
+                                    <div class="status"></div>
+                                </div>
+                            </div>
+                            <div class="container-task-body container-name container-flex">
+                                <p>Juan</p>
+                            </div>
+                            <div class="container-task-body container-flex">
+                                <div class="container-botton-one container-flex">
+                                    <button class="btn-change" id="btn-change"><i class="fas fa-exchange-alt fa-2x"></i></button>
+                                </div>
+                                <div class="container-botton-two container-flex">
+                                    <input type="button" value="Finalizar" id="btn-end">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END TASK -->
+                </div>
+                <!-- MARTES ************************************************************ -->
+                <div class="container-task container-flex">
+                <!-- TASK -->
+                    <div class="task light-orange">
+                            <div class="container-task-body container-flex">
+                                <div class="container-title container-flex">
+                                    <h2>Refrigerador</h2>
+                                </div>
+                                <div class="container-status container-flex">
+                                    <div class="status"></div>
+                                </div>
+                            </div>
+                            <div class="container-task-body container-name container-flex">
+                                <p>Juan</p>
+                            </div>
+                            <div class="container-task-body container-flex">
+                                <div class="container-botton-one container-flex">
+                                    <button class="btn-change" id="btn-change"><i class="fas fa-exchange-alt fa-2x"></i></button>
+                                </div>
+                                <div class="container-botton-two container-flex">
+                                    <input type="button" value="Finalizar" id="btn-end">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END TASK -->
+                </div>
+                <!-- MIÉRCOLES ************************************************************ -->
+                <div class="container-task container-flex">
+                    <!-- TASK -->
+                    <div class="task light-pink">
+                            <div class="container-task-body container-flex">
+                                <div class="container-title container-flex">
+                                    <h2>Microondas</h2>
+                                </div>
+                                <div class="container-status container-flex">
+                                    <div class="status"></div>
+                                </div>
+                            </div>
+                            <div class="container-task-body container-name container-flex">
+                                <p>Juan</p>
+                            </div>
+                            <div class="container-task-body container-flex">
+                                <div class="container-botton-one container-flex">
+                                    <button class="btn-change" id="btn-change"><i class="fas fa-exchange-alt fa-2x"></i></button>
+                                </div>
+                                <div class="container-botton-two container-flex">
+                                    <input type="button" value="Finalizar" id="btn-end">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END TASK -->
+                </div>
+                <!-- JUEVES ************************************************************ -->
+                <div class="container-task container-flex">
+                    <!-- TASK -->
+                    <div class="task light-pink">
+                            <div class="container-task-body container-flex">
+                                <div class="container-title container-flex">
+                                    <h2>Microondas</h2>
+                                </div>
+                                <div class="container-status container-flex">
+                                    <div class="status"></div>
+                                </div>
+                            </div>
+                            <div class="container-task-body container-name container-flex">
+                                <p>Juan</p>
+                            </div>
+                            <div class="container-task-body container-flex">
+                                <div class="container-botton-one container-flex">
+                                    <button class="btn-change" id="btn-change"><i class="fas fa-exchange-alt fa-2x"></i></button>
+                                </div>
+                                <div class="container-botton-two container-flex">
+                                    <input type="button" value="Finalizar" id="btn-end">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END TASK -->
+                </div>
+                <!-- VIERNES ************************************************************ -->
+                <div class="container-task container-flex">
+                    <!-- TASK -->
+                    <div class="task light-blue">
+                            <div class="container-task-body container-flex">
+                                <div class="container-title container-flex">
+                                    <h2>Refrigerador</h2>
+                                </div>
+                                <div class="container-status container-flex">
+                                    <div class="status"></div>
+                                </div>
+                            </div>
+                            <div class="container-task-body container-name container-flex">
+                                <p>Juan</p>
+                            </div>
+                            <div class="container-task-body container-flex">
+                                <div class="container-botton-one container-flex">
+                                    <button class="btn-change" id="btn-change"><i class="fas fa-exchange-alt fa-2x"></i></button>
+                                </div>
+                                <div class="container-botton-two container-flex">
+                                    <input type="button" value="Finalizar" id="btn-end">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END TASK -->
+                </div>
+            </div>
+        </div>
+        <!-- END MAIN -->
+
+        <!-- MAIN ADMIN  -->
+        <div class="container-admin container-flex" id="main-admin">
+            <div class="container-card-one container-flex main-admin">
+                <h2 class="title">Bienvenido</h2>
+            </div>
+            <div class="container-card-two container-flex">
+                <h2>Selecciona una opción</h2>
+            </div>
+            <div class="container-card-three container-flex space">
+                
+                <div class="option container-flex light-green">
+                    <div class="option-title container-flex center-content">
+                        <h2 class="title white">Registrar usuarios</h2>
+                    </div>
+                    <div class="option-icon container-flex center-content">
+                        <i class="fas fa-user-plus fa-xs"></i>
+                    </div>
+                </div>
+            
+            
+                <div class="option container-flex dark-orange">
+                    <div class="option-title container-flex center-content">
+                        <h2 class="title white">Consumibles</h2>
+                    </div>
+                    <div class="option-icon container-flex center-content">
+                        <i class="fas fa-apple-alt"></i>
+                    </div>
+                </div>
+            
+            
+                    <div class="option container-flex light-pink">
+                        <div class="option-title container-flex center-content">
+                            <h2 class="title white">Registro</h2>
+                        </div>
+                        <div class="option-icon container-flex center-content">
+                            <i class="far fa-list-alt"></i>
+                        </div>
+                    </div>
+                
+            </div>
+        </div>
+        <!-- END OPTIONS ADMIN -->
+
+        <style>
+        
+        </style>
+        <!-- ERROR PAGE -->
+        <div class="container-error container-flex center-content" id="error">
+            <div class="title-error container-flex center-content">
+                <h1>404</h1>
+            </div>
+            <h1 class="title">Página no encontrada!</h1>
+            <input type="button" class="btn-return mtop40" value="Regresar">
+        </div>
+
+        <!-- END ERROR -->
+
+        <!-- ADMIN REGISTRY -->
+        <div class="content-registry container-flex" id="registry">
+            <div class="container-flex modal-title">
+                <h2 class="title">Registro</h2>
+            </div>
+            <div class="container-flex modal-input">
+                <h3>Nombre</h3>
+                <input class="input-reg" type="text" name="" id="" placeholder="Ingresa el nuevo nombre">
+            </div>
+            <div class="container-flex modal-input2">
+                <h3>Apodo</h3>
+                <input class="input-reg" type="text" name="" id="" placeholder="Ingresa el apodo">
+            </div>
+            <div class="container-flex">
+                <div class="modal-medium container-flex padding-right">
+                    <h3>Expediente</h3>
+                    <input class="input-reg" type="text" name="" id="" placeholder="267921">
+                </div>
+                <div class="modal-medium container-flex padding-left">
+                    <h3>Confirmar expediente</h3>
+                    <input class="input-reg" type="text" name="" id="" placeholder="267921">
+                </div>
+            </div>
+            <div class="container-flex">
+                <div class="modal-medium container-flex padding-right">
+                    <h3>Sexo</h3>
+                    <select class="select-reg" name="" id="">
+                        <option selected disabled>Selecciona una opción</option>
+                        <option value="F">Femenino</option>
+                        <option value="M">Masculino</option>
+                    </select>
+                </div>
+                <div class="modal-medium container-flex padding-left">
+                    <h3>Día libre:</h3>
+                    <select class="select-reg" name="" id="">
+                        <option selected disabled>Selecciona una opción</option>
+                        <option value="Lunes">Lunes</option>
+                        <option value="Martes">Martes</option>
+                        <option value="Miercoles">Miércoles</option>
+                        <option value="Jueves">Jueves</option>
+                        <option value="Viernes">Viernes</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="container-flex padding-top">
+                <div class="modal-medium container-flex padding-right">
+                    <input class="modal-btn cancel" type="button" name="" id="" value="Cancelar">
+                </div>
+                <div class="modal-medium container-flex padding-left">
+                    <input class="modal-btn acept blue" type="button" name="" id="" value="Registrar">
+                </div>
+            </div>
+        </div>
+        <!-- END REGISTRY -->
+
+        <!-- LOGIN -->
+        <div class="content-login container-flex" id="login">
+            <div class="container-flex modal-title padding-bottom">
+                <h2 class="title">Iniciar Sesión</h2>
+            </div>
+            <div class="container-flex modal-input2">
+                <h3>Nombre</h3>
+                <input class="input-reg" type="text" name="" id="" placeholder="Ingrese su nombre de usuario">
+            </div>
+            <div class=" container-flex modal-input2">
+                <h3>Contraseña</h3>     
+                <input class="input-reg" type="text" name="" id="" placeholder="Ingrese su contraseña">
+            </div>
+            <div class="container-flex modal-input2">
+                <div class="container-flex">
+                    <input class="modal-btn acept blue size-btn" type="button" name="" id="" value="Registrar">
+                </div>
+            </div>
+        </div>        
+        <!-- END LOGIN -->
+
+        <!-- HISTORY -->
+        <div class="container-history container-flex" id="history">
+            <div class="container-card-one container-flex">
+                <h2 class="title">Historial</h2>
+            </div>
+            <div class="container-card-two container-flex">
+                <h2 class="mleft4">Selecciona una opción</h2>
+            </div>
+            <div class="container-card-two container-flex">
+                <input type="button" class="btn-return" value="Regresar">
+            </div>
+            <div class="container-card-three container-flex center-content">
+                <div class="history-table">
+                    <table class="data" border>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nombre</th>
+                            <th>Tarea</th>
+                            <th>Semana</th>
+                            <th>Estado</th>
+                        </tr>
+                        <tr>
+                            <td>Entry First Line 1</td>
+                            <td>Entry First Line 2</td>
+                            <td>Entry First Line 3</td>
+                            <td>Entry First Line 4</td>
+                        </tr>
+                        <tr>
+                            <td>Entry Line 1</td>
+                            <td>Entry Line 2</td>
+                            <td>Entry Line 3</td>
+                            <td>Entry Line 4</td>
+                        </tr>
+                        <tr>
+                            <td>Entry Last Line 1</td>
+                            <td>Entry Last Line 2</td>
+                            <td>Entry Last Line 3</td>
+                            <td>Entry Last Line 4</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!-- END HISTORY -->
+
+        <!-- MODAL LOG -->
+        <div class="modal-background container-flex center-content" id="modal1">
+            <div class="modal-content container-flex">
+                <div class="container-flex modal-title">
+                    <h2 class="title">Iniciar sesión</h2>
+                </div>
+                <div class="container-flex modal-input2">
+                    <h3>Nombre</h3>
+                    <input class="input-reg" type="text" name="" id="" placeholder="Ingrese su nombre de usuario">
+                </div>
+                <div class=" container-flex modal-input2">
+                    <h3>Contraseña</h3>
+                    <input class="input-reg" type="text" name="" id="" placeholder="Ingrese su contraseña">
+                </div>
+                <div class="container-flex padding-top">
+                    <div class="modal-medium container-flex padding-right">
+                        <input class="modal-btn cancel" type="button" name="" id="close" value="Cancelar">
+                    </div>
+                    <div class="modal-medium container-flex padding-left">
+                        <input class="modal-btn acept blue" type="button" name="" id="" value="Registrar">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END MODAL -->
+        <!-- MODAL 2 -->
+        <div class="modal-background container-flex center-content" id="modal2">
+            <div class="modal-content container-flex">
+                <div class="container-flex modal-title">
+                    <h2 class="title">Cambiar tarea</h2>
+                </div>
+                <div class=" container-flex modal-input">
+                    <h3>Nombre</h3>
+                    <input class="input-reg" type="text" name="" id="" placeholder="Ingresa tu nombre de usuario">
+                </div>
+                    <div class="container-flex">
+                        <div class="modal-medium container-flex padding-right">
+                            <h3>Nueva tarea:</h3>
+                            <select class="select-reg" name="" id="">
+                                <option selected disabled>Selecciona una opción</option>
+                                <option value="nABC">Cocina</option>
+                                <option value="nSala">Sala</option>
+                                <option value="nRefrigerador">Refrigerador</option>
+                                <option value="nMicroondas">Microondas</option>
+                            </select>
+                        </div>
+                        <div class="modal-medium container-flex padding-left">
+                            <h3>Confirmar</h3>
+                            <input class="input-reg" type="text" name="" id="" placeholder="267921">
+                        </div>
+                    </div>
+                    <div class="container-flex padding-top">
+                        <div class="modal-medium container-flex padding-right">
+                            <input class="modal-btn cancel" type="button" name="" id="close-two" value="Cancelar">
+                        </div>
+                        <div class="modal-medium container-flex padding-left">
+                            <input class="modal-btn acept blue" type="button" name="" id="" value="Registrar">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END MODAL -->
+            
+            <!-- MODAL 3 -->
+            <div class="modal-background container-flex center-content" id="modal3">
+                    <div class="modal-content container-flex">
+                        <div class="container-flex modal-title">
+                            <h2 class="title">Confirmar tarea</h2>
+                        </div>
+                        <div class="container-flex modal-input">
+                            <h3>Nombre</h3>
+                            <input class="input-reg" type="text" name="" id="" placeholder="Ingresa tu nombre de usuario">
+                        </div>
+                        <div class="container-flex modal-medium-input">
+                            <h3>Expediente</h3>
+                            <input class="input-reg" type="text" name="" id="" placeholder="Ingresa tu expediente">
+                        </div>                            
+                            <div class="container-flex padding-top">
+                                <div class="modal-medium container-flex padding-right">
+                                    <input class="modal-btn cancel" type="button" name="" id="close-three" value="Cancelar">
+                                </div>
+                                <div class="modal-medium container-flex padding-left">
+                                    <input class="modal-btn acept blue" type="button" name="" id="" value="Aceptar">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        </div>
+    </div>
+</body>
+<script>
+//   document.getElementById("aceptar").addEventListener("click",()=>{
+//       const url = 'URL';
+//         fetch(url, {
+//         method: 'POST', 
+//         body: JSON.stringify(data),
+//         headers:{
+//             'Content-Type': 'application/json'
+//         }
+//         }).then(res => res.json())
+//         .catch(error => console.error('Error:', error))
+//         .then(response => console.log('Success:', response));
+//     });
+</script>
+</html>
